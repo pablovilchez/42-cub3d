@@ -1,0 +1,15 @@
+NO assets/textures/snow.png
+SO assets/textures/diamond.png
+WE assets/textures/sand.png
+EA assets/textures/grass.png
+
+F 0,255,0
+C 0,0,255
+
+111111111
+100000001
+100000001
+110000001
+1000000S1
+100000001
+111111111
