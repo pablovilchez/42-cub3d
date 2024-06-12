@@ -1,46 +1,86 @@
-# 🧊 Cub3D
+# 42 - Cub3d
 
-> This repository contains a "cub3d" project that is part of the École 42 curriculum
+![42 School](https://img.shields.io/badge/42%20School-Project-blue)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white)
+![Grade](https://img.shields.io/badge/Grade-105-brightgreen)
 
-![Screen Recording - Feb 10, 2024](https://github.com/BredyByte/cub3d/assets/81176650/62caeeeb-18d1-46e9-a188-019cf8f778e8)
+## Description
 
-Cub3D is a fascinating project inspired by the world's first-ever first-person shooter, Wolfenstein 3D, which was a significant pioneer of the genre in the early 1990s. This project aims to recreate the technique of ray-casting used in the original game, albeit in a more modern and simplified context.
+Cub3d is a project from 42 School that involves creating a 3D graphical representation of a maze using raycasting techniques in C. The goal of this project is to gain a deeper understanding of how raycasting works and to develop advanced programming skills in C and graphics programming.
 
-The Cub3D project is not just about creating a game, but it's about appreciating the history of computer graphics and understanding the underlying techniques that make our favorite video games possible.
+## Features
 
-## 🤨 Ray-casting ?
-Ray-casting is a rendering technique used in 3D graphics to create a 3D perspective in a 2D map. Back in the day when the computers were not powerful enough to handle full 3D, ray-casting was a neat trick to simulate a 3D view with less computational cost.
+- Real-time rendering of a 3D maze using raycasting.
+- Textured walls and sprites.
+- Player movement and collision detection.
 
-## 🏚 Usage
-Before running the program, ensure you have the necessary libraries installed, depending on your operating system.
+## Requirements
 
-### macOS
+- Unix-based operating system (Linux or macOS)
+- GCC compiler
+- MLX42 library for graphics (provided by 42 School)
+- In Linux:
 
-```bash
-brew update
-brew install glfw
+    ```sh
+    sudo apt install build-essential libx11-dev libglfw3-dev libglfw3 xorg-dev
+    ```
+
+## Installation
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/pablovilchez/42-cub3d.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```sh
+    cd cub3d
+    ```
+
+3. Compile the project:
+
+    ```sh
+    make
+    ```
+
+## Usage
+
+Run the program by executing the following command:
+
+```sh
+./cub3d [map_file.cub]
 ```
 
-If you are a student of 42 Málaga and encounter the error "command not found: brew" run the following command to install Homebrew:
-```bash
-curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh
+## Example
+
+```sh
+./cub3d maps/map.cub
 ```
 
-### Linux
+## Controls
 
-```bash
-sudo apt update
-sudo apt install build-essential libx11-dev libglfw3-dev libglfw3 xorg-dev
-```
+- Move forward: W
+- Move backward: S
+- Strafe left: A
+- Strafe right: D
+- Rotate left: Left arrow
+- Rotate right: Right arrow
+- Exit the program: ESC
 
-Once the libraries are installed, you can build and run the program using the following commands:
+## Co-author
 
-```
-make
-```
+- **Davyd** - [github.com/BredyByte](https://github.com/gkrusta)
 
-## 🙏 **Appreciation Corner**
-   This remarkable project was accomplished and refined to its finest form through the assistance of my comrade and collaborator, the virtuoso [🧮 pvilchez](https://github.com/pablovilchez).
+## License
 
-## 📝 P.S.
-   If you have any questions about the project, feel free to contact me via [Telegram](https://t.me/Davyd_y_punto) or [LinkedIn](https://www.linkedin.com/in/davyd-bredykhin-1u961/).
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- Thanks to 42 School for the project guidelines and support.
+- Special thanks to my teammate Davyd for his incredible effort, hard work, and for putting up with me throughout the project.
+
+---
