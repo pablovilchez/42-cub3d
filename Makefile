@@ -1,7 +1,8 @@
 NAME = cub3D
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -Wunreachable-code -Ofast
+CFLAGS = -Wall -Wextra -Werror -Wunreachable-code -Ofast -fPIE
+LDFLAGS = -pie
 REMOVE = rm -rf
 
 OBJ_PATH = obj
@@ -53,7 +54,7 @@ all: $(MLX_LIB_PATH) $(LIBFT_LIB_PATH) $(NAME)
 .SILENT: all $(MLX_LIB_PATH) $(LIBFT_LIB_PATH) $(NAME) $(OBJ) clean fclean re
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) $(LIBFT_LIB_PATH) $(MLX_LIB_PATH) $(LIBS) $(HEADERS) -o $@
+	$(CC) $(OBJ) $(LIBFT_LIB_PATH) $(MLX_LIB_PATH) $(LIBS) $(HEADERS) $(LDFLAGS) -o $@
 	echo "\n$(ORANGE)$(U_LINE)⭐️ $(NAME): Compiled ⭐️$(RESET) \n"
 
 $(MLX_LIB_PATH):
